@@ -1,0 +1,16 @@
+[project]
+name = "kida-ai"
+version = "0.1.0"
+description = "Stateless AI extraction and reasoning service for KIDA"
+authors = [
+    { name = "htfci", email = "133967843+htfci@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+kida-ai = "kida_ai:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
