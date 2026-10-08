@@ -104,3 +104,6 @@ tmp/
 out-tsc/
 bazel-out/
 coverage/
+
+# Springboot App -> FileController -> uploads/ directory
+uploads/

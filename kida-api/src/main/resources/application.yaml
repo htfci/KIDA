@@ -1,3 +1,20 @@
 spring:
   application:
     name: kida-api
+
+kida:
+  storage:
+    upload-dir: "uploads"
+    allowed-extensions:
+      - "txt"
+      - "pdf"
+      - "csv"
+      - "jpg"
+      - "jpeg"
+      - "png"
+    allowed-mime-types:
+      - "text/plain"
+      - "application/pdf"
+      - "text/csv"
+      - "image/jpeg"
+      - "image/png"
