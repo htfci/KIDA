@@ -11,4 +11,5 @@ public class KidaApiApplication {
     public static void main(String[] args) {
         SpringApplication.run(KidaApiApplication.class, args);
     }
+
 }

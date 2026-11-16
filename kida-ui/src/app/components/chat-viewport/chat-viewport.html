@@ -1,0 +1,66 @@
+<div class="h-full min-h-0 flex flex-col bg-white">
+
+    <!-- 1. Fixed Matadata block -->
+    <div class="shrink-0 p-4 border-b border-slate-200 bg-slate-50">
+        <div class="rounded-lg border border-slate-200 bg-white p-3 shadow-sm">
+            <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+                <div class="flex items-center gap-2">
+                    <svg class="h-5 w-5 text-slate-500" viewBox="0 -960 960 960" fill="currentColor">
+                        <path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520Z" />
+                    </svg>
+                    <span class="text-sm font-semibold text-slate-800">Jaarverslag_2025_Definitief.pdf</span>
+                </div>
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-emerald-100 text-emerald-800">
+                    Geanalyseerd
+                </span>
+            </div>
+
+            <!-- Metadata grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 pt-2 text-xs">
+                <div>
+                    <span class="block text-slate-400 font-medium">Classificatie</span>
+                    <span class="font-medium text-slate-700">Financieel rapport</span>
+                </div>
+                <div>
+                    <span class="block text-slate-400 font-medium">Dossier ID</span>
+                    <span class="font-mono text-slate-700">#DOS-8942-X</span>
+                </div>
+                <div>
+                    <span class="block text-slate-400 font-medium">Bestandsgrootte</span>
+                    <span class="text-slate-700">2.4 MB</span>
+                </div>
+                <div>
+                    <span class="block text-slate-400 font-medium">Status</span>
+                    <span class="text-slate-700">Gekoppeld</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. SCROLLBARE CHAT -->
+    <div class="flex-1 min-h-0 overflow-y-auto p-4 space-y-4">
+
+        <!-- User msg -->
+        <div class="flex justify-end">
+            <div class="max-w-[75%] rounded-2xl rounded-tr-sm bg-slate-900 px-4 py-2.5 text-sm text-white shadow-sm">
+                <p>Wat zijn de belangrijkste punten in dit dossier?</p>
+                <span class="mt-1 block text-right text-[10px] text-slate-400">14:16</span>
+            </div>
+        </div>
+
+        <!-- AI msg -->
+        <div class="flex items-start gap-3 justify-start">
+            <div
+                class="h-7 w-7 shrink-0 rounded-full bg-slate-200 flex items-center justify-center text-xs font-bold text-slate-700">
+                AI
+            </div>
+            <div
+                class="max-w-[75%] rounded-2xl rounded-tl-sm border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-800 shadow-sm">
+                <p>Hier zijn de kernpunten op basis van het gekoppelde document...</p>
+                <span class="block text-[10px] text-slate-400 pt-1">14:16</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>

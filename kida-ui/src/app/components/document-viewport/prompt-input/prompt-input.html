@@ -1,0 +1,41 @@
+<form class="flex flex-col gap-1 p-2 border border-slate-300 bg-gray-50 rounded-md shadow-md">
+  <textarea rows="2" name="" placeholder="Ask questions about documents..." class="w-full resize-none field-sizing-content max-h-32 overflow-y-auto focus-within:outline-none p-1"></textarea>
+
+  <!-- Buttons container -->
+  <div class="flex flex-row justify-between p-1">
+
+    <!-- Right buttons -->
+    <div class="relative flex flex-row gap-2.5">
+      <button type="button" title="Insert file" (click)="uploadFile()" class="border border-slate-200 rounded-md p-1 hover:bg-slate-200 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+      </button>
+      <button type="button" title="Tools" (click)="isOpenTools = !isOpenTools" class="flex flex-row justify-center items-center gap-1 border border-slate-200 rounded-md p-1 hover:bg-slate-200 cursor-pointer">
+        <span>Tools</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.276a3.004 3.004 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852Z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.867 19.125h.008v.008h-.008v-.008Z" />
+        </svg>
+      </button>
+
+      @if (isOpenTools) {
+        <!-- Onzichtbare laag om klikken buiten het menu af te vangen -->
+        <div class="fixed inset-0 z-10" (click)="isOpenTools = false"></div>
+
+        <div class="absolute bottom-full right-0 mb-2 w-48 bg-white border border-slate-200 rounded-md shadow-lg z-20 p-2 flex flex-col gap-1">
+          <button type="button" (click)="summarize()" class="text-sm text-left px-2 py-1 rounded hover:bg-slate-100">Summarize</button>
+          <button type="button" (click)="translate()" class="text-sm text-left px-2 py-1 rounded hover:bg-slate-100">Translate</button>
+        </div>
+      }
+    </div>
+
+    <!-- Left buttons -->
+    <button type="submit" title="Send prompt" class="flex flex-row justify-center items-center gap-0.5 border border-slate-200 rounded-md p-1 hover:bg-slate-200 cursor-pointer">
+      <span>Run</span>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+      </svg>
+    </button>
+  </div>
+</form>

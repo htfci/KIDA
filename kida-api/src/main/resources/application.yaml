@@ -18,3 +18,4 @@ kida:
       - "text/csv"
       - "image/jpeg"
       - "image/png"
+    ai-service-uri: "http://127.0.0.1:8000"
