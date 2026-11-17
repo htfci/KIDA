@@ -23,9 +23,9 @@
         <!-- Onzichtbare laag om klikken buiten het menu af te vangen -->
         <div class="fixed inset-0 z-10" (click)="isOpenTools = false"></div>
 
-        <div class="absolute bottom-full right-0 mb-2 w-48 bg-white border border-slate-200 rounded-md shadow-lg z-20 p-2 flex flex-col gap-1">
-          <button type="button" (click)="summarize()" class="text-sm text-left px-2 py-1 rounded hover:bg-slate-100">Summarize</button>
-          <button type="button" (click)="translate()" class="text-sm text-left px-2 py-1 rounded hover:bg-slate-100">Translate</button>
+        <div class="absolute bottom-full left-12 mb-2 w-48 bg-white border border-slate-200 rounded-md shadow-lg z-20 p-2 flex flex-col gap-1">
+          <button type="button" (click)="summarize()" class="text-sm text-left px-2 py-1 rounded hover:bg-slate-200">Summarize</button>
+          <button type="button" (click)="translate()" class="text-sm text-left px-2 py-1 rounded hover:bg-slate-200">Translate</button>
         </div>
       }
     </div>

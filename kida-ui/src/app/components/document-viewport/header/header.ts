@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './header.html',
 })
 export class Header {
-  isMenuOpen = false;
+  private chatStatus: String = "Temporary chat";
+  private isMenuOpen = false;
 
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
@@ -16,4 +17,7 @@ export class Header {
   closeMenu(): void {
     this.isMenuOpen = false;
   }
+
+  newChat(): void { }
+  
 }

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { DocumentUpload } from './document-upload/document-upload';
 import { PromptInput } from './prompt-input/prompt-input';
+import { Header } from './header/header'
+import { Chat } from './chat/chat';
 
 @Component({
-  imports: [DocumentUpload, PromptInput],
+  imports: [PromptInput, Header, Chat],
   selector: 'app-document-viewport',
   styleUrl: './document-viewport.css',
   templateUrl: './document-viewport.html',
